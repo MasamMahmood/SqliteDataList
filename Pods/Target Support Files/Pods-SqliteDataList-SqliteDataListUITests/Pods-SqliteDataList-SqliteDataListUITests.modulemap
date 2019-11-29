@@ -1,0 +1,6 @@
+framework module Pods_SqliteDataList_SqliteDataListUITests {
+  umbrella header "Pods-SqliteDataList-SqliteDataListUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

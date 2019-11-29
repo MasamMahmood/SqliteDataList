@@ -1,0 +1,102 @@
+{
+    "sectionList": [
+        
+        {
+            "items": [
+                {
+                    "actionType": 14,
+                    "textField": "Sayaç G4",
+                    "textValue": "ECA"
+                },
+                {
+                    "actionType": 14,
+                    "textField": "Sayaç Endeks",
+                    "textValue": "2343"
+                },
+                {
+                    "actionType": 14,
+                    "textField": "Sayaç Yeri"
+                },
+                {
+                    "actionType": 12,
+                    "textField": "Sayaç Aparatı"
+                },
+                {
+                    "textField": "Brüt Alan",
+                    "textValue": "136.00 m2"
+                },
+                {
+                    "textField": "Basınç",
+                    "textValue": "21 mbar"
+                },
+                {
+                    "textField": "Debi",
+                    "textValue": "3.5 m3/h "
+                },
+                {
+                    "textField": "Poliçe Başlangıç",
+                    "textValue": "02.04.2018 "
+                },
+                {
+                    "textField": "Poliçe Bitiş",
+                    "textValue": "02.07.2018 "
+                }
+            ],
+            "title": "Proje Bilgileri"
+        },
+        {
+            "items": [
+                {
+                    "actionType": 21,
+                    "textField": "Kombi",
+                    "textValue": "ECA"
+                },
+                {
+                    "actionType": 14,
+                    "pickList": [
+                        {
+                            "items": [
+                                {
+                                    "textField": "Marka Seçilmedi"
+                                },
+                                {
+                                    "textField": "Cihaz Yok"
+                                },
+                                {
+                                    "textField": "Yedek Cihaz"
+                                }
+                            ],
+                            "title": "Seçenekler"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "textField": "AEG"
+                                },
+                                {
+                                    "textField": "ALARKO"
+                                }
+                            ],
+                            "title": "A"
+                        },
+                        {
+                            "items": [
+                                {
+                                    "textField": "BAYKAN"
+                                },
+                                {
+                                    "textField": "BAYMAK"
+                                }
+                            ],
+                            "title": "B"
+                        }
+                    ],
+                    "textField": "Ocak",
+                    "textValue": "Arçelik"
+                }
+            ],
+            "title": "Cihazlar"
+        }
+        
+    ]
+}
