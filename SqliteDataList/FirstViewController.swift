@@ -4,7 +4,9 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, ListDelegate {
+    
+    
 
     @IBOutlet weak var tableView: UITableView!
     var AppData : Unit?
@@ -15,6 +17,14 @@ class FirstViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         pullData()
+        
+    }
+    
+    func listFunc(tvc2: ViewController, didSelectList listValue: String) {
+        print(listValue)
+        let indexPathRow:Int = 0
+        let indexPosition = IndexPath(row: indexPathRow, section: 0)
+        tableView.reloadRows(at: [indexPosition], with: .none)
     }
     
     

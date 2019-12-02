@@ -9,6 +9,10 @@ import UIKit
 import Alamofire
 import SQLite
 
+protocol ListDelegate {
+    func listFunc(tvc2: ViewController, didSelectList listValue: String)
+}
+
 
 class ViewController: UIViewController {
 
@@ -18,6 +22,7 @@ class ViewController: UIViewController {
     var db: Connection?
     var FinalData : [String]?
     var IndexData = [SectionList]()
+    var delegate: ListDelegate?
     
    
     let tblPicklist = Table("PickList")
@@ -126,19 +131,19 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
            }
        }
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//           if let cell = tableView.cellForRow(at: indexPath) {
-//               cell.accessoryType = .checkmark
-//               let selectedRows = tableView.indexPathsForSelectedRows
-//                print(selectedRows)
-//
-//
-//
-//           }
-        if let index = IndexData. {
-          let cell = tableView.cellForRow(at: IndexPath(row: index, section: 0))
-          cell?.accessoryType = .none
-        }
         
+        let indexPath = tableView.indexPathForSelectedRow
+        let currentCell = tableView.cellForRow(at: indexPath!)!
+        //print(currentCell.textLabel?.text as Any)
+        currentCell.accessoryType = .checkmark
+        delegate?.listFunc(tvc2: self, didSelectList: currentCell.textLabel?.text ?? "")
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        
+        
+     
        }
       
         
