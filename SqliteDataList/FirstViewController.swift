@@ -81,8 +81,8 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          
-         selectedIndex = indexPath.row
-         selectedSection = indexPath.section
+        // selectedIndex = indexPath.row
+        // selectedSection = indexPath.section
         
         let cell = UITableViewCell()
          cell.backgroundColor = UIColor.clear
@@ -161,6 +161,8 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            print(indexPath.row)
            print(indexPath.section)
+        selectedIndex = indexPath.row
+        selectedSection = indexPath.section
         
         if let actionType = AppData?.sectionList?[indexPath.section].items?[indexPath.row].actionType {
         switch actionType {
