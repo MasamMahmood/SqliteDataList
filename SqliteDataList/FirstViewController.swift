@@ -10,21 +10,25 @@ class FirstViewController: UIViewController, ListDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var AppData : Unit?
+    let svC = ViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         tableView.delegate = self
         tableView.dataSource = self
         pullData()
         
+        
     }
     
-    func listFunc(tvc2: ViewController, didSelectList listValue: String) {
+    func listFunc(listValue: String) {
         print(listValue)
-        let indexPathRow:Int = 0
-        let indexPosition = IndexPath(row: indexPathRow, section: 0)
-        tableView.reloadRows(at: [indexPosition], with: .none)
+//        let indexPathRow:Int = 0
+//        let indexPosition = IndexPath(row: indexPathRow, section: 0)
+//        tableView.reloadRows(at: [indexPosition], with: .none)
+        tableView.reloadData()
     }
     
     
@@ -158,11 +162,13 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
                 case 14:
                     print(actionType)
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                    vc.delegate = self
                     self.navigationController?.pushViewController(vc, animated: true)
                 
                 case 21:
                 print(actionType)
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                vc.delegate = self
                 self.navigationController?.pushViewController(vc, animated: true)
             
                 default:

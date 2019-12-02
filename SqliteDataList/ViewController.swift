@@ -10,7 +10,7 @@ import Alamofire
 import SQLite
 
 protocol ListDelegate {
-    func listFunc(tvc2: ViewController, didSelectList listValue: String)
+    func listFunc(listValue: String)
 }
 
 
@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         tableView.delegate = self
         dbSetup()
         dbSelectOperation()
+        
        
     }
     
@@ -136,10 +137,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let currentCell = tableView.cellForRow(at: indexPath!)!
         //print(currentCell.textLabel?.text as Any)
         currentCell.accessoryType = .checkmark
-        delegate?.listFunc(tvc2: self, didSelectList: currentCell.textLabel?.text ?? "")
+        delegate?.listFunc(listValue: currentCell.textLabel?.text ?? "")
+        self.navigationController?.popViewController(animated: true)
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.navigationController?.pushViewController(vc, animated: true)
         
         
         
