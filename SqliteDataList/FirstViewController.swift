@@ -10,7 +10,8 @@ class FirstViewController: UIViewController, ListDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var AppData : Unit?
-    let svC = ViewController()
+    var selectedIndex: Int?
+    var selectedSection: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class FirstViewController: UIViewController, ListDelegate {
 //        let indexPathRow:Int = 0
 //        let indexPosition = IndexPath(row: indexPathRow, section: 0)
 //        tableView.reloadRows(at: [indexPosition], with: .none)
+        AppData?.sectionList?[selectedSection!].items?[selectedIndex!].textValue = listValue
         tableView.reloadData()
     }
     
@@ -79,7 +81,10 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          
-         let cell = UITableViewCell()
+         selectedIndex = indexPath.row
+         selectedSection = indexPath.section
+        
+        let cell = UITableViewCell()
          cell.backgroundColor = UIColor.clear
          cell.selectionStyle = .none
          let grayBox = UIView(frame: CGRect(x: 5, y: 0, width: self.view.frame.size.width - 11 , height: 50))

@@ -9,7 +9,7 @@ import Foundation
 struct SectionList : Codable {
     
     let title : String?
-    let items : [Item]?
+    var items : [Item]?
     
 }
 
@@ -19,8 +19,8 @@ struct Item : Codable {
     let actionUrl : String?
     let bgColor : String?
     let booleanValue : Bool?
-    let textField : String?
-    let textValue : String?
+    var textField : String?
+    var textValue : String?
     let unitId : Int?
     let latitude : Double?
     let longitude : Double?
@@ -36,6 +36,6 @@ struct Item : Codable {
 
 struct Unit : Codable {
     
-    let sectionList : [SectionList]?
+    var sectionList : [SectionList]?
     
 }
