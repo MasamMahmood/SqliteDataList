@@ -137,7 +137,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let currentCell = tableView.cellForRow(at: indexPath!)!
         //print(currentCell.textLabel?.text as Any)
         currentCell.accessoryType = .checkmark
-        delegate?.listFunc(listValue: currentCell.textLabel?.text ?? "")
+        let value = currentCell.textLabel?.text
+        delegate?.listFunc(listValue: value ?? "")
         self.navigationController?.popViewController(animated: true)
         
         

@@ -36,7 +36,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071.2" y="121.88905547226388"/>
+            <point key="canvasLocation" x="1183" y="122"/>
+        </scene>
+        <!--Input View Controller-->
+        <scene sceneID="HaX-Gj-j8z">
+            <objects>
+                <viewController storyboardIdentifier="InputViewController" id="ruf-hQ-Yce" customClass="InputViewController" customModule="SqliteDataList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z2g-vy-Myb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H4S-9r-dDc">
+                                <rect key="frame" x="86" y="212" width="202" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Rp2-Ua-B3e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPq-r6-sQd">
+                                <rect key="frame" x="150.5" y="362" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="2KE-Rp-h11"/>
+                                    <constraint firstAttribute="height" constant="30" id="ew9-rz-uMw"/>
+                                </constraints>
+                                <state key="normal" title="Pass Value"/>
+                                <connections>
+                                    <action selector="inputBtn:" destination="ruf-hQ-Yce" eventType="touchUpInside" id="GgV-zE-Tsx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H4S-9r-dDc" firstAttribute="leading" secondItem="DGV-fi-Df0" secondAttribute="leading" constant="86" id="L9y-1R-B8Y"/>
+                            <constraint firstItem="H4S-9r-dDc" firstAttribute="top" secondItem="DGV-fi-Df0" secondAttribute="top" constant="168" id="MKX-hM-fzo"/>
+                            <constraint firstItem="DGV-fi-Df0" firstAttribute="trailing" secondItem="H4S-9r-dDc" secondAttribute="trailing" constant="87" id="TGr-ya-EKW"/>
+                            <constraint firstItem="YPq-r6-sQd" firstAttribute="centerX" secondItem="Z2g-vy-Myb" secondAttribute="centerX" id="ivK-Tz-XAo"/>
+                            <constraint firstItem="DGV-fi-Df0" firstAttribute="bottom" secondItem="YPq-r6-sQd" secondAttribute="bottom" constant="275" id="kwc-KJ-Ui7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DGV-fi-Df0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X7y-s4-MHT"/>
+                    <connections>
+                        <outlet property="inputTxt" destination="H4S-9r-dDc" id="3bs-F7-MWE"/>
+                        <outlet property="passBtn" destination="YPq-r6-sQd" id="e2t-Gh-XeQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huM-CF-Jai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1157.5999999999999" y="-652.62368815592208"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="gV4-13-MQj">
@@ -64,6 +112,7 @@
                     <connections>
                         <outlet property="tableView" destination="cq9-gA-sYB" id="AHQ-no-Yft"/>
                         <segue destination="BYZ-38-t0r" kind="show" id="QJB-mg-Z1j"/>
+                        <segue destination="ruf-hQ-Yce" kind="show" id="2I3-u3-ckF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zd1-CS-yER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

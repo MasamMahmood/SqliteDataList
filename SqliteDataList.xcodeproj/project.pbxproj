@@ -10,6 +10,7 @@
 		B27D957029367DAB44B6D3C1 /* Pods_SqliteDataList_SqliteDataListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E101F0EA7866A110A9EF271 /* Pods_SqliteDataList_SqliteDataListUITests.framework */; };
 		C616DE0FE101155A838A540F /* Pods_SqliteDataListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E71287AC644B066DD7A8A11 /* Pods_SqliteDataListTests.framework */; };
 		D580101B5DDEE5A777B760F3 /* Pods_SqliteDataList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AA813BBE17004DA79871F7 /* Pods_SqliteDataList.framework */; };
+		E844FC7A23963E7700FA9557 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844FC7923963E7700FA9557 /* InputViewController.swift */; };
 		E859655823911EB3006DFEFC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859655723911EB3006DFEFC /* FirstViewController.swift */; };
 		E859655A23911EF2006DFEFC /* Unit.json in Resources */ = {isa = PBXBuildFile; fileRef = E859655923911EF2006DFEFC /* Unit.json */; };
 		E88FEC9F2383FED60061CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88FEC9E2383FED60061CB4D /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		9E71287AC644B066DD7A8A11 /* Pods_SqliteDataListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SqliteDataListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AA813BBE17004DA79871F7 /* Pods_SqliteDataList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SqliteDataList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADA37E474D5BD7D8FDC698F /* Pods-SqliteDataListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqliteDataListTests.debug.xcconfig"; path = "Target Support Files/Pods-SqliteDataListTests/Pods-SqliteDataListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E844FC7923963E7700FA9557 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		E850F41523851F0100E19D67 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E859655723911EB3006DFEFC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		E859655923911EF2006DFEFC /* Unit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Unit.json; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				E88FECAF2383FED70061CB4D /* Info.plist */,
 				E88FECA72383FED60061CB4D /* SqliteDataList.xcdatamodeld */,
 				E88FECD123840A810061CB4D /* response.swift */,
+				E844FC7923963E7700FA9557 /* InputViewController.swift */,
 			);
 			path = SqliteDataList;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				E88FECA32383FED60061CB4D /* ViewController.swift in Sources */,
 				E88FEC9F2383FED60061CB4D /* AppDelegate.swift in Sources */,
 				E88FECA12383FED60061CB4D /* SceneDelegate.swift in Sources */,
+				E844FC7A23963E7700FA9557 /* InputViewController.swift in Sources */,
 				E859655823911EB3006DFEFC /* FirstViewController.swift in Sources */,
 				E88FECA92383FED60061CB4D /* SqliteDataList.xcdatamodeld in Sources */,
 				E88FECD223840A810061CB4D /* response.swift in Sources */,

@@ -4,7 +4,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, ListDelegate {
+class FirstViewController: UIViewController, ListDelegate, InputDelegate {
     
     
 
@@ -166,6 +166,13 @@ extension FirstViewController: UITableViewDelegate, UITableViewDataSource {
         
         if let actionType = AppData?.sectionList?[indexPath.section].items?[indexPath.row].actionType {
         switch actionType {
+                
+                case 12:
+                    print(actionType)
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "InputViewController") as! InputViewController
+                    vc.Inputdelegate = self
+                    self.navigationController?.pushViewController(vc, animated: true)
+                
                 case 14:
                     print(actionType)
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
