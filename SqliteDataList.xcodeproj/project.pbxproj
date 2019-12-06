@@ -10,6 +10,8 @@
 		B27D957029367DAB44B6D3C1 /* Pods_SqliteDataList_SqliteDataListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E101F0EA7866A110A9EF271 /* Pods_SqliteDataList_SqliteDataListUITests.framework */; };
 		C616DE0FE101155A838A540F /* Pods_SqliteDataListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E71287AC644B066DD7A8A11 /* Pods_SqliteDataListTests.framework */; };
 		D580101B5DDEE5A777B760F3 /* Pods_SqliteDataList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AA813BBE17004DA79871F7 /* Pods_SqliteDataList.framework */; };
+		E82FB8F12397872F00097450 /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82FB8F02397872F00097450 /* AlamoFireViewController.swift */; };
+		E82FB8F32397874300097450 /* file.json in Resources */ = {isa = PBXBuildFile; fileRef = E82FB8F22397874300097450 /* file.json */; };
 		E844FC7A23963E7700FA9557 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E844FC7923963E7700FA9557 /* InputViewController.swift */; };
 		E859655823911EB3006DFEFC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E859655723911EB3006DFEFC /* FirstViewController.swift */; };
 		E859655A23911EF2006DFEFC /* Unit.json in Resources */ = {isa = PBXBuildFile; fileRef = E859655923911EF2006DFEFC /* Unit.json */; };
@@ -52,6 +54,8 @@
 		9E71287AC644B066DD7A8A11 /* Pods_SqliteDataListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SqliteDataListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AA813BBE17004DA79871F7 /* Pods_SqliteDataList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SqliteDataList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADA37E474D5BD7D8FDC698F /* Pods-SqliteDataListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SqliteDataListTests.debug.xcconfig"; path = "Target Support Files/Pods-SqliteDataListTests/Pods-SqliteDataListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E82FB8F02397872F00097450 /* AlamoFireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
+		E82FB8F22397874300097450 /* file.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = file.json; sourceTree = "<group>"; };
 		E844FC7923963E7700FA9557 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		E850F41523851F0100E19D67 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E859655723911EB3006DFEFC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				E88FECA72383FED60061CB4D /* SqliteDataList.xcdatamodeld */,
 				E88FECD123840A810061CB4D /* response.swift */,
 				E844FC7923963E7700FA9557 /* InputViewController.swift */,
+				E82FB8F02397872F00097450 /* AlamoFireViewController.swift */,
+				E82FB8F22397874300097450 /* file.json */,
 			);
 			path = SqliteDataList;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 			files = (
 				E859655A23911EF2006DFEFC /* Unit.json in Resources */,
 				E88FECAE2383FED70061CB4D /* LaunchScreen.storyboard in Resources */,
+				E82FB8F32397874300097450 /* file.json in Resources */,
 				E88FECAB2383FED70061CB4D /* Assets.xcassets in Resources */,
 				E88FECA62383FED60061CB4D /* Main.storyboard in Resources */,
 			);
@@ -432,6 +439,7 @@
 				E859655823911EB3006DFEFC /* FirstViewController.swift in Sources */,
 				E88FECA92383FED60061CB4D /* SqliteDataList.xcdatamodeld in Sources */,
 				E88FECD223840A810061CB4D /* response.swift in Sources */,
+				E82FB8F12397872F00097450 /* AlamoFireViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

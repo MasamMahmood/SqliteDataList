@@ -39,3 +39,24 @@ struct Unit : Codable {
     var sectionList : [SectionList]?
     
 }
+
+struct DataClass : Codable {
+
+        let descriptionField : String?
+        let engine : Int?
+        let locationName : String?
+
+        enum CodingKeys: String, CodingKey {
+                case descriptionField = "description"
+                case engine = "engine"
+                case locationName = "location_name"
+        }
+    
+        init(from decoder: Decoder) throws {
+                let values = try decoder.container(keyedBy: CodingKeys.self)
+                descriptionField = try values.decodeIfPresent(String.self, forKey: .descriptionField)
+                engine = try values.decodeIfPresent(Int.self, forKey: .engine)
+                locationName = try values.decodeIfPresent(String.self, forKey: .locationName)
+        }
+
+}
